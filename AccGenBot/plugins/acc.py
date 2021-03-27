@@ -100,7 +100,7 @@ buttons=[
 ])
 
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="RetroCrush"))
-async def RetroCrush:
+async def RetroCrush(event):
 
     soul = await verify(Config.CHANNEL_US, event, AccGenBot)
     if soul is False:
@@ -123,7 +123,7 @@ buttons=[
 ])
 
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="MeetMe"))
-async def RetroCrush:
+async def MeetMe(event):
 
     soul = await verify(Config.CHANNEL_US, event, AccGenBot)
     if soul is False:
