@@ -7,7 +7,7 @@ from Configs import Config
 @AccGenBot.on(events.NewMessage(pattern="/start"))
 async def start(event):
 
-    await AccGenBot.send_message(Config.PRV_CHAT,"Bot Started By [{event.sender_id}](tg://user?id={event.sender_id})")
+    await AccGenBot.send_message(Config.PRV_CHAT,"Bot Started By [(event.sender_id)](tg://user?id={event.sender_id})")
     Soul = await verify(Config.CHANNEL_US, event, AccGenBot)
     if Soul is False:
             await event.reply("**Sad , Dude 🥺 Join Channel To Use :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
