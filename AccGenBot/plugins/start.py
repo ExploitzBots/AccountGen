@@ -14,7 +14,7 @@ async def start(event):
             return
 
     heck = await AccGenBot(GetFullUserRequest(event.sender_id))
-    name = sender.user.first_name
+    name = heck.user.first_name
     await event.reply("Heya {name}\n\nWelcome to Boi 🔥, From Here You can Generate Premium Accounts\n\nMade With ❤️ By @ExploitzBots", buttons=[[Button.inline("Generate Accounts", data="gen")], [Button.url("Join Channel!", Config.CHANNEL_URL)]])
 
 #Repeat Codes :/
@@ -27,5 +27,5 @@ async def start(event):
             return
 
     heck = await AccGenBot(GetFullUserRequest(event.sender_id))
-    name = sender.user.first_name
+    name = heck.user.first_name
     await event.edit("Heya {name}\n\nWelcome to AccGenBot, From Here You can Generate free Accounts\n\nMade With ❤️ By @ExploitzBots", buttons=[[Button.inline("Generate Accounts", data="gen")], [Button.url("Join Channel!", Config.CHANNEL_URL)]])
