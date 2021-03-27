@@ -17,6 +17,6 @@ async def gen(event):
 buttons=[
     [Button.inline("Zee5", data="zee5"), Button.inline("Voot", data="voot")],
     [Button.inline("Wish", data="wish"), Button.inline("Shudder", data="shud")],
-    [Button.inline("RetroCrush", data="Rtc"), Button.inline("MeetMe", data="mm")],
+    [Button.inline("RetroCrush", data="RetroCrush"), Button.inline("MeetMe", data="MeetMe")],
     [Button.inline("Main Menu", data="start_bot")]
 ])
