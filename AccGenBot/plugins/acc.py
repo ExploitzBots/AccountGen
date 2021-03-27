@@ -3,6 +3,7 @@ from .. import *
 from Configs import Config
 from telethon import Button, events
 from telethon.tl.functions.users import GetFullUserRequest
+import random
 
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="zee5"))
 async def zee5(event):
