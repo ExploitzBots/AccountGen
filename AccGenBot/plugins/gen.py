@@ -13,9 +13,10 @@ async def gen(event):
            await event.edit("**Join my channel for using this bot :)**", buttons=[[Button.url("Join Channel!", Config.CHANNEL_URL)]])
            return
 
-    await event.edit("Choose Which Accounts you want to Generate", 
+    await event.edit("Choose Which Accounts you want to Generate Dear ❤️", 
 buttons=[
     [Button.inline("Zee5", data="zee5"), Button.inline("Voot", data="voot")],
     [Button.inline("Wish", data="wish"), Button.inline("Shudder", data="shud")],
+    [Button.inline("RetroCrush", data="Rtc"), Button.inline("MeetMe", data="mm")],
     [Button.inline("Main Menu", data="start_bot")]
 ])
