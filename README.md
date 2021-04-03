@@ -16,7 +16,7 @@ email@email.com:password
 email@email.com:password
 ```
 # My Devs
-➥ [SoulHackz](https://t.me/SoulHackz)
+➥ [Madboi](https://t.me/Madboi_xD)
 
 # Configs
 ```
