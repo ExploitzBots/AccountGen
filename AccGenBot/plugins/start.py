@@ -18,7 +18,7 @@ async def start(event):
     await event.reply(f"Heya {name}\n\nWelcome to AccGenBot, From Here You can Generate free Accounts\n\nMade With ❤️ By @EvilzBots", buttons=[[Button.inline("Generate Accounts", data="gen")], [Button.url("Join Channel!", Config.CHANNEL_URL)]])
 
 #Repeat Codes :/
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="start_bot"))
+@AccGenBot.on(events.callbackquery.CallbackQuery(data=b"start_bot"))
 async def start(event):
 
     Soul = await verify(Config.CHANNEL_US, event, AccGenBot)
@@ -28,4 +28,4 @@ async def start(event):
 
     heck = await AccGenBot(GetFullUserRequest(event.sender_id))
     name = heck.user.first_name
-    await event.edit(f"Hoi ❤️ \n\nWelcome to AccGenBot, From Here You can Generate Accounts That You Want \n\nMade With ❤️ By @ProAccountsHub", buttons=[[Button.inline("Generate Accounts", data="gen")], [Button.url("Join Channel!", Config.CHANNEL_URL)]])
+    await event.edit(f"Hoi ❤️ \n\nWelcome to AccGenBot, From Here You can Generate Accounts That You Want \n\nMade With ❤️ By @ProAccountsHub", buttons=[[Button.inline("Generate Accounts", data="gen")], [Button.url("Join Channel!", Config.CHANNEL_URL)]]
