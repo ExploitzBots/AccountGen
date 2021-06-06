@@ -14,9 +14,9 @@ async def vpns(event):
            return
 
     await event.edit("Choose Which Accounts want to Generate", 
-buttons=[
+btn=[
     [Button.inline("Nord Vpn", data="nord"), Button.inline("Express Vpn", data="exv")],
     [Button.inline("IpVanish", data="ips"), Button.inline("SurfShark", data="sfs")],
-    [Button.inline("SurfeasyVPN", data="sfv"), Button.inline("Windscribe", data="wnd")],
+    [Button.inline("Surfeasy VPN", data="sfv"), Button.inline("Windscribe", data="wnd")],
     [Button.inline("Main Menu", data="start_bot")]
 ])
