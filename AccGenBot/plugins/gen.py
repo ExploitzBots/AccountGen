@@ -23,6 +23,13 @@ buttons=[
 
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="Vpns"))
 async def gen(event):
+
+    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if soul is False:
+           await event.edit("**Join my channel for using this bot :)**", buttons=[[Button.url("Join Channel!", Config.CHANNEL_URL)]])
+           return
+
+    await event.edit("Select Your Option")
     buttons=[
         [Button.inline("IpVanish", data="IPS")],
         [Button.inline("NordVpn", data="Nord")]
