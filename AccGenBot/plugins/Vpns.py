@@ -5,8 +5,8 @@ from telethon import Button, events
 from telethon.tl.functions.users import GetFullUserRequest
 from Configs import Config
 
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="Vpns"))
-async def gen(event):
+@AccGenBot.on(events.callbackquery.CallbackQuery(data="vpns"))
+async def vpns(event):
 
     soul = await verify(Config.CHANNEL_US, event, AccGenBot)
     if soul is False:
