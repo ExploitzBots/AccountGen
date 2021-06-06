@@ -20,3 +20,11 @@ buttons=[
     [Button.inline("MeetMe", data="MeetMe"), Button.inline("Uplay", data="Uplay")],
     [Button.inline("Main Menu", data="start_bot")]
 ])
+
+@AccGenBot.on(events.callbackquery.CallbackQuery(data="Vpns"))
+    buttons=[
+        [Button.inline("IpVanish", data="IPS")],
+        [Button.inline("NordVpn", data="Nord")]
+    ])
+   
+
