@@ -21,7 +21,8 @@ buttons=[
     [Button.inline("Main Menu", data="start_bot")]
 ])
 
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="Vpn"))
+@AccGenBot.on(events.callbackquery.CallbackQuery(data="Vpns"))
+async def gen(event):
     buttons=[
         [Button.inline("IpVanish", data="IPS")],
         [Button.inline("NordVpn", data="Nord")]
