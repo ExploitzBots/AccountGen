@@ -11,7 +11,7 @@ async def vpns(vpns):
 TEXT = """
 **Heya {}**
 Choose the account you wanna generate.
-""".format(gen.sender.first_name)
+""".format(vpns.sender.first_name)
 
      await vpns.edit(TEXT, button=[
     [Button.inline("Nord Vpn", data="nord"), Button.inline("Express Vpn", data="exv")],
