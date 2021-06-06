@@ -19,4 +19,4 @@ buttons=[
     [Button.inline("Wish", data="wish"), Button.inline("Shudder", data="shud")],
     [Button.inline("MeetMe", data="MeetMe"), Button.inline("Uplay", data="Uplay")],
     [Button.inline("Main Menu", data="start_bot")]
-]
+])
