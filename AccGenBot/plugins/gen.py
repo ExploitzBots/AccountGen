@@ -19,5 +19,5 @@ buttons=[
     [Button.inline("✘ Streaming Accounts ✘", data="stream")],
     [Button.inline("✘ P$RN Accounts ✘", data="porn")],
     [Button.inline("✘ Educational Accounts ✘", data="edu")],
-    [Button.inline("Main Menu", data="start_bot")]
+    [Button.inline("Main Menu", data="gen")]
 ])
