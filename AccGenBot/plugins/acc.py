@@ -206,5 +206,4 @@ async def uplay(event):
         [Button.inline("IpVanish", data="IPS")],
         [Button.inline("NordVpn", data="Nord")]
     ])
-    else:
-        await hehe.edit("Limit Over")
+   
