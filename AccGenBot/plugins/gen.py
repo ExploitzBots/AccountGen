@@ -5,7 +5,7 @@ from telethon import Button, events
 from telethon.tl.functions.users import GetFullUserRequest
 from Configs import Config
 
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="gen"))
+@AccGenBot.on(events.callbackquery.CallbackQuery(data=b"gen"))
 async def gen(event):
 
     soul = await verify(Config.CHANNEL_US, event, AccGenBot)
@@ -19,4 +19,4 @@ buttons=[
     [Button.inline("Wish", data="wish"), Button.inline("Shudder", data="shud")],
     [Button.inline("MeetMe", data="MeetMe"), Button.inline("Uplay", data="Uplay")],
     [Button.inline("Main Menu", data="start_bot")]
-])
+]
