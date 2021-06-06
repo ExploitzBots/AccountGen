@@ -11,7 +11,7 @@ async def sed(event):
     text="*Choose The Vpn Which You Want*"
     await event.edit(text,
                      buttons=[
-                         [Button.inline("Nord Vpn", data="nord")],
-                         [Button.inline("IpVanish", data="ips")],
+                         [Button.inline("✘ Nord Vpn ✘", data="nord")],
+                         [Button.inline("✘ IpVanish ✘", data="ips")],
                          [Button.inline("Main Menu", data="start_bot")]
                      ])
