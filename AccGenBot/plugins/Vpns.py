@@ -6,15 +6,14 @@ from telethon.tl.functions.users import GetFullUserRequest
 from Configs import Config
 
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="vpns"))
-async def vpns(event):
+async def vpns(vpns):
 
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
-           await event.edit("**Join my channel for using this bot :)**", buttons=[[Button.url("Join Channel!", Config.CHANNEL_URL)]])
-           return
+TEXT = """
+**Heya {}**
+Choose the account you wanna generate.
+""".format(gen.sender.first_name)
 
-    await event.edit("Choose Which Accounts want to Generate", 
-button=[
+     await vpns.edit(TEXT, button=[
     [Button.inline("Nord Vpn", data="nord"), Button.inline("Express Vpn", data="exv")],
     [Button.inline("IpVanish", data="ips"), Button.inline("SurfShark", data="sfs")],
     [Button.inline("Surfeasy VPN", data="sfv"), Button.inline("Windscribe", data="wnd")],
