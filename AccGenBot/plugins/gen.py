@@ -15,7 +15,7 @@ async def gen(event):
 
     await event.edit("Choose Which Accounts you want to Generate", 
 buttons=[
-    [Button.inline("Zee5", data="zee5"), Button.inline("Voot", data="voot")],
+    [Button.inline("Vpn Service", data="Vpns"), Button.inline("Voot", data="voot")],
     [Button.inline("Wish", data="wish"), Button.inline("Shudder", data="shud")],
     [Button.inline("MeetMe", data="MeetMe"), Button.inline("Uplay", data="Uplay")],
     [Button.inline("Main Menu", data="start_bot")]
