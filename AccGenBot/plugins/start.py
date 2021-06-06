@@ -15,7 +15,7 @@ async def start(event):
 
     heck = await AccGenBot(GetFullUserRequest(event.sender_id))
     name = heck.user.first_name
-    await event.reply(f"Heya {name}\n\nWelcome to **MultiGenBot**, From Here You Can Generate Many Premium Accounts\n\nMade With ❤️ By @EvilzBots, buttons=[[Button.inline("Generate Accounts", data="gen")], [Button.url("Join Channel!", Config.CHANNEL_URL)]])
+    await event.reply(f"Heya {name}\n\nWelcome to MultiGenBot, From Here You Can Generate Many Premium Accounts\n\nMade With ❤️ By @EvilzBots, buttons=[[Button.inline("Generate Accounts", data="gen")], [Button.url("Join Channel!", Config.CHANNEL_URL)]])
 
 #Repeat Codes :/
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="start_bot"))
