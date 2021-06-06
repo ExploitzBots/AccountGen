@@ -33,6 +33,6 @@ async def gen(event):
     buttons=[
         [Button.inline("IpVanish", data="IPS")],
         [Button.inline("NordVpn", data="Nord")]
-    ])
+])
    
 
