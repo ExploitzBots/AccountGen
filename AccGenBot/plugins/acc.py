@@ -9,7 +9,7 @@ from lists import users
 
 
 
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="zee5"))
+@AccGenBot.on(events.callbackquery.CallbackQuery(data=b"zee5"))
 async def zee5(event):
     chat = event.sender_id
     soul = await verify(Config.CHANNEL_US, event, AccGenBot)
