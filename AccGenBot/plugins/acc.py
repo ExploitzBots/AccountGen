@@ -201,9 +201,3 @@ async def uplay(event):
     else:
         await hehe.edit("LIMIT EXCEED")
 
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="Vpns"))
-    buttons=[
-        [Button.inline("IpVanish", data="IPS")],
-        [Button.inline("NordVpn", data="Nord")]
-    ])
-   
