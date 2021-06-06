@@ -8,8 +8,8 @@ from Configs import Config
 @AccGenBot.on(events.callbackquery.CallbackQuery(data=b"gen"))
 async def gen(event):
 
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.edit("**Join my channel for using this bot :)**", buttons=[[Button.url("Join Channel!", Config.CHANNEL_URL)]])
            return
 
