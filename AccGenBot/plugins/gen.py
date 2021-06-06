@@ -15,13 +15,13 @@ async def gen(event):
 
     await event.edit("Choose Which Accounts you want to Generate", 
 buttons=[
-    [Button.inline("Vpn Service", data="Vpns"), Button.inline("Voot", data="voot")],
+    [Button.inline("Vpn", data="Vpns"), Button.inline("Voot", data="voot")],
     [Button.inline("Wish", data="wish"), Button.inline("Shudder", data="shud")],
     [Button.inline("MeetMe", data="MeetMe"), Button.inline("Uplay", data="Uplay")],
     [Button.inline("Main Menu", data="start_bot")]
 ])
 
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="Vpns"))
+@AccGenBot.on(events.callbackquery.CallbackQuery(data="Vpn"))
     buttons=[
         [Button.inline("IpVanish", data="IPS")],
         [Button.inline("NordVpn", data="Nord")]
