@@ -8,8 +8,8 @@ from Configs import Config
 async def start(event):
 
     await AccGenBot.send_message(Config.PRV_CHAT, f"Bot Started By [{event.sender_id}](tg://user?id={event.sender_id})")
-    Soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if Soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
             await event.reply("**Join my channel to use this bot :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
             return
 
@@ -21,8 +21,8 @@ async def start(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data=b"start_bot"))
 async def start(event):
 
-    Soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if Soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
             await event.edit("**Join my channel to use this bot :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
             return
 
