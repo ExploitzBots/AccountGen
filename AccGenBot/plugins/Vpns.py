@@ -7,7 +7,6 @@ from telethon.tl.functions.users import GetFullUserRequest
 from Configs import Config
 
 @AccGenBot.on(events.callbackquery.CallbackQuery(data=b"vpns"))
-
 button=[
     [Button.inline("Nord Vpn", data="nord"), Button.inline("Express Vpn", data="exv")],
     [Button.inline("IpVanish", data="ips"), Button.inline("SurfShark", data="sfs")],
