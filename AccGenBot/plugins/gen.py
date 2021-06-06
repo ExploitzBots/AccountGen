@@ -13,16 +13,15 @@ async def gen(event):
            await event.edit("**Join my channel for using this bot :)**", buttons=[[Button.url("Join Channel!", Config.CHANNEL_URL)]])
            return
 
-    TEXT = """
-**Heya {}**
-Choose the account you wanna generate.
-""".format(gen.sender.first_name)
-
-     await gen.edit(TEXT, buttons=[
+    await event.edit("Choose Which Accounts you want to Generate", 
+buttons=[
     [Button.inline("Vpn Section", data="vpns"), Button.inline("Streaming Section", data="str_sec")],
     [Button.inline("Main Menu", data="start_bot")]
 vpns=[
   [Button.inline("Nord Vpn", data="nord"), Button.inline("IPVansih", data="ips")],
+    [Button.inline("Main Menu", data="start_bot")]
+str_sec=[
+  [Button.inline("Nord t Vpn", data="norjd"), Button.inline("IPVansnih", data="inps")],
     [Button.inline("Main Menu", data="start_bot")]
     
 ])
