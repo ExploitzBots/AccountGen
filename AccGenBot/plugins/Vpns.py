@@ -8,7 +8,7 @@ from Configs import Config
 
 @AccGenBot.on(events.callbackquery.CallbackQuery(data=b"vpns"))
 async def sed(event):
-    text="I am an Account Generator Bot!\nI can generate working accounts for you.\n\nClick generate accounts to get your account!! Make sure to join my channel and support me!"
+    text="*Choose The Vpn Which You Want*"
     await event.edit(text,
                      buttons=[
                          [Button.inline("Nord Vpn", data="nord"), Button.inline("Express Vpn", data="exv")],
