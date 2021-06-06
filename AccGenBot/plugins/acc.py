@@ -246,7 +246,7 @@ async def netflix(event):
             users[chat] += 1
     except KeyError:
         users[chat] = 1
-    if users[chat] <= 1:
+    if users[chat] <= 2:
         with open('netflix.txt') as ha:
             sedloif = ha.read().splitlines()
         sed = random.choice(sedloif)
