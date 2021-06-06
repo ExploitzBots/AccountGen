@@ -12,10 +12,10 @@ from lists import users
 @AccGenBot.on(events.callbackquery.CallbackQuery(data=b"zee5"))
 async def zee5(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
 
 
-    if soul is False:
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
     try:
@@ -46,8 +46,8 @@ async def zee5(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="voot"))
 async def voot(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
@@ -77,8 +77,8 @@ async def voot(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="wish"))
 async def wish(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
@@ -110,8 +110,8 @@ async def wish(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="shud"))
 async def shud(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
@@ -142,8 +142,8 @@ async def shud(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="MeetMe"))
 async def MeetMe(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
@@ -174,8 +174,8 @@ buttons=[
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="Uplay"))
 async def uplay(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
@@ -204,8 +204,8 @@ async def uplay(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="nord"))
 async def nord(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
@@ -234,8 +234,8 @@ async def nord(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="netflix"))
 async def netflix(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
@@ -264,8 +264,8 @@ async def netflix(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="aha"))
 async def aha(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
@@ -294,8 +294,8 @@ async def aha(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="IpVanish"))
 async def IpVanish(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
@@ -324,8 +324,8 @@ async def IpVanish(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="brazzers"))
 async def brazzers(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
@@ -354,8 +354,8 @@ async def brazzers(event):
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="Pornhub"))
 async def Pornhub(event):
     chat = event.sender_id
-    soul = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if soul is False:
+    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
+    if evil is False:
            await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
            return
 
