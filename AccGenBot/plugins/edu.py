@@ -7,11 +7,11 @@ from telethon.tl.functions.users import GetFullUserRequest
 from Configs import Config
 
 @AccGenBot.on(events.callbackquery.CallbackQuery(data=b"edu"))
-async def happy(event):
+async def sed(event):
     text="*Choose The Which Account You Want*"
     await event.edit(text,
                      buttons=[
-                         [Button.inline("✘ KhanAcademy ✘", data="kha")],
-                         [Button.inline("✘ UnAcademy ✘", data="una")],
+                         [Button.inline("✘ KhanAcademy ✘", data="khan")],
+                         [Button.inline("✘ UnAcademy ✘", data="unac")],
                          [Button.inline("Main Menu", data="gen")]
                      ])
