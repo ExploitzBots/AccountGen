@@ -17,7 +17,7 @@ async def gen(event):
 buttons=[
     [Button.inline("✘ Vpn Accounts ✘", data="vpns")],
     [Button.inline("✘ Streaming Accounts ✘", data="stream")],
-    [Button.inline("✘ P$RN Accounts ✘", data="porn")],
+    [Button.inline("✘ Cashout Accounts ✘", data="porn")],
     [Button.inline("✘ Educational Accounts ✘", data="edu")],
     [Button.inline("Back :)", data="start_bot")]
 ])
