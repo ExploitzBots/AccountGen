@@ -7,7 +7,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from Configs import Config
 
 @AccGenBot.on(events.callbackquery.CallbackQuery(data=b"porn"))
-async def happy(event):
+async def sed(event):
     text="*Choose The Which Account You Want*"
     await event.edit(text,
                      buttons=[
