@@ -138,26 +138,6 @@ async def unac(event):
     else:
         await hehe.edit("LIMIT EXCEED")
 
-
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="bbc"))
-async def bbc(event):
-    chat = event.sender_id
-    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
-    if evil is False:
-           await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
-           return
-
-    hehe = await event.edit("<b><i>Typing</i></b>", parse_mode="HTML")
-
-        await hehe.edit(**This Account Is Coming Soon..❤️\n\nPlease Stand By**",
-buttons=[
-    [Button.url("Join Channel", Config.CHANNEL_URL)],
-    [Button.inline("Back", data="gen")]
-])
-    else:
-        await hehe.edit("Generate Some Other Accounts 🔥")
-
-
 @AccGenBot.on(events.callbackquery.CallbackQuery(data="Uplay"))
 async def uplay(event):
     chat = event.sender_id
