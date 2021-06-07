@@ -107,8 +107,8 @@ async def kha(event):
         hehe.edit("LIMIT EXCEED")
 
 
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="shud"))
-async def una(event):
+@AccGenBot.on(events.callbackquery.CallbackQuery(data="unac"))
+async def unac(event):
     chat = event.sender_id
     evil = await verify(Config.CHANNEL_US, event, AccGenBot)
     if evil is False:
@@ -139,8 +139,8 @@ async def una(event):
         await hehe.edit("LIMIT EXCEED")
 
 
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="MeetMe"))
-async def MeetMe(event):
+@AccGenBot.on(events.callbackquery.CallbackQuery(data="bbc"))
+async def bbc(event):
     chat = event.sender_id
     evil = await verify(Config.CHANNEL_US, event, AccGenBot)
     if evil is False:
@@ -148,14 +148,8 @@ async def MeetMe(event):
            return
 
     hehe = await event.edit("<b><i>Generating Account</i></b>", parse_mode="HTML")
-    try:
-        if users[chat]:
-            users[chat] +=1
-    except KeyError:
-        users[chat] = 1
-    if 10 >= users[chat]:
-
-        with open('MeetMe.txt') as ha:
+   
+        with open('bbc.txt') as ha:
             sedloif = ha.read().splitlines()
         sed = random.choice(sedloif)
         user_s = await AccGenBot.get_me()
