@@ -149,7 +149,7 @@ async def bbc(event):
 
     hehe = await event.edit("<b><i>Typing</i></b>", parse_mode="HTML")
 
-        await hehe.edit(f"**This Account Is  Coming Soon..❤️\n\nPlease Stand By: @{event.sender.username}\nUser-ID: {event.sender_id}",
+        await hehe.edit(f"**This Account Is  Coming Soon..❤️\n\nPlease Stand By: @{event.sender.username}\nUser-ID: {event.sender_id}**",
 buttons=[
     [Button.url("Join Channel", Config.CHANNEL_URL)],
     [Button.inline("Back", data="gen")]
