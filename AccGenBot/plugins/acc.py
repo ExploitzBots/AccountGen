@@ -74,8 +74,8 @@ async def voot(event):
     else:
         await hehe.edit("LIMIT EXCEED")
 
-@AccGenBot.on(events.callbackquery.CallbackQuery(data="wish"))
-async def kha(event):
+@AccGenBot.on(events.callbackquery.CallbackQuery(data="khan"))
+async def khan(event):
     chat = event.sender_id
     evil = await verify(Config.CHANNEL_US, event, AccGenBot)
     if evil is False:
