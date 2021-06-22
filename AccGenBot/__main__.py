@@ -1,14 +1,3 @@
-#    AccGenBot
-#    Copyright © 2021 SoulHackz
-
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-
-#    See < https://github.com/SoulHackz/AccGenBot/blob/master/LICENSE > 
-#    for the license.
-
 import glob
 from pathlib import Path
 from AccGenBot.utils import load_plugins
