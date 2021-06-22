@@ -11,7 +11,8 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-from bot import mongo_client
+from start import mongo_client
+import os
 
 m_s = mongo_client['accountgenbot']
 sud = m_s['users']
