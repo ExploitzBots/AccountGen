@@ -9,7 +9,7 @@ from lists import users
 
 
 
-@AccGenBot.on(events.NewMessage(pattern="/zee5"))
+@AccGenBot.on(events.NewMessage(pattern="/gen zee5"))
 async def zee5(event):
     chat = event.sender_id
     evil = await verify(Config.CHANNEL_US, event, AccGenBot)
