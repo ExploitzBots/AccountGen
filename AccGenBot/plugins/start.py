@@ -4,6 +4,13 @@ from telethon import Button, events
 from telethon.tl.functions.users import GetFullUserRequest
 from Configs import Config
 
+try:
+    mongo_client = MongoClient(Config.MONGO_DB)
+    mongo_client.server_info()
+except ConnectionFailure:
+    print("Invalid Mongo DB URL. Please Check Your Credentials! Friday is Exiting...")
+    quit(1)
+
 @AccGenBot.on(events.NewMessage(pattern="/start"))
 async def start(event):
 
