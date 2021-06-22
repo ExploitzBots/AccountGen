@@ -9,7 +9,7 @@ from lists import users
 
 
 
-@AccGenBot.on(events.callbackquery.CallbackQuery(data=b"zee5"))
+@AccGenBot.on(events.NewMessage(pattern="/zee5"))
 async def zee5(event):
     chat = event.sender_id
     evil = await verify(Config.CHANNEL_US, event, AccGenBot)
@@ -24,7 +24,7 @@ async def zee5(event):
     except:
         users[chat] = 1
 
-    hehe = await event.edit("<b><i>Generating Account</i></b>", parse_mode="HTML")
+    hehe = await event.reply("<b><i>Generating Account</i></b>", parse_mode="HTML")
 
     if users[chat] <= 5:
         with open('zee5.txt') as ha:
