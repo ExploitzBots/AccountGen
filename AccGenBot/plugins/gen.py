@@ -17,10 +17,10 @@ async def help(event):
     heck = await AccGenBot(GetFullUserRequest(event.sender_id))
     name = heck.user.first_name
     await event.reply(f"""
-**I am an Account Generator Bot
--------------------------------------------------
-I can provide premium accounts of different services
---------------------------------------------------
-Do /gen to generate an account
---------------------------------------------------**
-""", buttons=[[Button.url("Join Channel!", Config.CHANNEL_URL)]])
+**Welcome To Help Menu 
+
+These are the following commands to generate accounts.
+`/start` : Restarts The Bot
+`/gen zee5` : Generates Zee5 Account
+`/info` : To Know About Your Status
+""", buttons=[[Button.inline("Main Menu", data= "start_bot")]])
