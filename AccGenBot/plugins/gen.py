@@ -20,8 +20,11 @@ async def help(event):
 **Welcome To Help Menu 
 
 These are the following commands to generate accounts.**
-`/start` : **Restarts The Bot**
-`/gen zee5` : **Generate Zee5 Account**
-`/info` : **To Know About Your Status**
+
+**/start : Restarts The Bot**
+**/gen zee5 : Generate Zee5 Account**
+**/gen voot : Generate Voot Account**
+**/gen aha : Generate Aha Account**
+**/info : To Know About Your Status**
 
 """)
