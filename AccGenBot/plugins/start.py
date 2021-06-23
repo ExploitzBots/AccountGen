@@ -3,15 +3,6 @@ from .. import *
 from telethon import Button, events
 from telethon.tl.functions.users import GetFullUserRequest
 from Configs import Config
-from pymongo import MongoClient
-from pymongo.errors import ConnectionFailure
-
-try:
-    mongo_client = MongoClient(Config.MONGO_DB)
-    mongo_client.server_info()
-except ConnectionFailure:
-    print("Invalid Mongo DB URL. Please Check Your Credentials! Friday is Exiting...")
-    quit(1)
 
 @AccGenBot.on(events.NewMessage(pattern="/start"))
 async def start(event):
@@ -24,7 +15,7 @@ async def start(event):
 
     heck = await AccGenBot(GetFullUserRequest(event.sender_id))
     name = heck.user.first_name
-    await event.reply(f"**Heya {name}\n\nWelcome to Premium Account Generator, From Here You can Generate free Accounts\n\nTry Command /help\n\nMade With ❤️ By @EvilzBots**", buttons=[[Button.url("Join Channel!", Config.CHANNEL_URL)]])
+    await event.reply(f"**Heya {name}\n\nWelcome To Premium Account Generator\n\nTry Command /help To Know More\n\nMade With ❤️ By @FreeCrackedHub**", buttons=[[Button.url("Join Channel!", Config.CHANNEL_URL)]])
 
 #Repeat Codes :/
 @AccGenBot.on(events.callbackquery.CallbackQuery(data=b"start_bot"))
@@ -37,4 +28,4 @@ async def start(event):
 
     heck = await AccGenBot(GetFullUserRequest(event.sender_id))
     name = heck.user.first_name
-    await event.reply(f"**Heya {name}\n\nWelcome to Premium Account Generator, From Here You can Generate free Accounts\n\nTry Command /help\n\nMade With ❤️ By @EvilzBots**", buttons=[[Button.url("Join Channel!", Config.CHANNEL_URL)]])
+    await event.reply(f"**Heya {name}\n\nWelcome To Premium Account Generator\n\nTry Command /help To Know More\n\nMade With ❤️ By @FreeCrackedHub**", buttons=[[Button.url("Join Channel!", Config.CHANNEL_URL)]])
