@@ -69,27 +69,3 @@ async def voot(event):
     ])
     else:
         await hehe.edit("Limit Exceed")
-
-@AccGenBot.on(events.NewMessage(pattern="/gen aha"))
-async def aha(event):
-    chat = event.sender_id
-    evil = await verify(Config.CHANNEL_US, event, AccGenBot)
-
-
-    if evil is False:
-           await event.reply("**Join my channel to use me :)**", buttons=[[Button.url("Join Channel", Config.CHANNEL_URL)]])
-           return
-    try:
-        if users[chat]:
-            users[chat] += 1
-    except:
-        users[chat] = 1
-
-    hehe = await event.reply("<b><i>Working On It</i></b>", parse_mode="HTML")
-
-        await hehe.edit(f"**Aha Account Is Limited For This Moment. It's Is Exceed**",
-    buttons=[
-        [Button.url("Join Channel", Config.CHANNEL_URL)]
-    ])
-
-
