@@ -87,10 +87,9 @@ async def aha(event):
 
     hehe = await event.reply("<b><i>Working On It</i></b>", parse_mode="HTML")
 
-        await hehe.edit(f"**Aha Account Is Limited For This Moment, It's Is Exceed**",
+        await hehe.edit(f"**Aha Account Is Limited For This Moment. It's Is Exceed**",
     buttons=[
         [Button.url("Join Channel", Config.CHANNEL_URL)]
     ])
-    else:
-        await hehe.edit("Limit Exceed")
+
 
